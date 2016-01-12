@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="js/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/soccerseasons.css">
+    <link rel="stylesheet" href="css/style.css"
+    <meta charset="UTF-8">
+    <title>Jonny's Sample App</title>
+  </head>
+  <body>
+
+
+  <!--&lt;!&ndash; todo modify for my needs &ndash;&gt;-->
+  <!--<div id="working-dropdown" class="navbar">-->
+    <!--<ul class="nav" role="navigation">-->
+      <!--<li class="dropdown">-->
+        <!--<a id="working" class="dropdown-toggle" data-toggle="dropdown">-->
+          <!--Working dropdown-->
+          <!--<b class="caret"></b>-->
+        <!--</a>-->
+        <!--<ul class="dropdown-menu" role="menu" aria-labelledby="working">-->
+          <!--<li>Item 1</li>-->
+          <!--<li>Item 2</li>-->
+        <!--</ul>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</div>-->
+
+    <!--<div id="myItemTemplate">-->
+
+    <!--</div>-->
+
+    <div class="container">
+      <h2>
+        Consuming an API with Backbone...sort of.
+      </h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>caption</th>
+            <th>league</th>
+            <th>year</th>
+            <th>currentMatchday</th>
+            <th>num teams</th>
+            <th>num games</th>
+            <th>lastUpdated</th>
+            <!--<th>Action</th>-->
+          </tr>
+          <!--<tr>-->
+            <!--<td><input class="form-control caption-input"></td>-->
+            <!--<td><input class="form-control currentMatchday-input"></td>-->
+            <!--<td><input class="form-control id-input"></td>-->
+            <!--<td><input class="form-control lastUpdated-input"></td>-->
+            <!--<td><button class="btn btn-primary add-soccerseasons">ADD</button></td>-->
+
+          <!--</tr>-->
+        </thead>
+        <tbody class="soccerseasons-list">
+
+        </tbody>
+      </table>
+
+        <!--<div id="#myCollectionTemplate">-->
+
+        <!--</div>-->
+      </div>
+
+
+      <!--<script type="text/html" id="nav">-->
+        <!--<div class="navbar">-->
+          <!--<ul class="nav">-->
+            <!--<li id="dropdown"></li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</script>-->
+
+      <!--<script type="text/template" class="soccerseasons-drop">-->
+
+
+      <!--</script>-->
+
+      <!--<script id="myCollectionTemplate" type="template">-->
+        <!--<% _.each(items, function(item){ %>-->
+        <!--Foo is: <%= item.caption %>-->
+        <!--<% }); %>-->
+      <!--</script>-->
+
+    <script type="text/template" class="soccerseasons-list-template">
+      <td><span class="id"><%= id  %></span></td>
+      <td><span class="caption"><%= caption  %></span></td>
+      <td><span class="league"><%= league  %></span></td>
+      <td><span class="year"><%= year  %></span></td>
+      <td><span class="currentMatchday"><%= currentMatchday  %></span></td>
+      <td><span class="numberOfTeams"><%= numberOfTeams  %></span></td>
+      <td><span class="numberOfGames"><%= numberOfGames  %></span></td>
+      <td><span class="lastUpdated"><%= lastUpdated  %></span></td>
+      <!--<td>-->
+
+        <!--<button class="btn btn-warning edit-soccerseasons">EDIT</button>-->
+        <!--<button class="btn btn-danger delete-soccerseasons">DELETE</button>-->
+        <!--<button class="btn btn-success update-soccerseasons" style="display:none">UPDATE</button>-->
+        <!--<button class="btn btn-danger cancel" style="display:none">CANCEL</button>-->
+      <!--</td>-->
+    </script>
+
+
+
+
+
+
+
+
+    <script src="js/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/bower_components/underscore/underscore-min.js"></script>
+    <script src="js/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/bower_components/backbone/backbone-min.js"></script>
+    <script src="js/bower_components/backbone.marionette/lib/backbone.marionette.min.js"></script>
+    <!--<script src="js/models/soccerseason.js"></script>-->
+    <!--<script src="js/bower_components/less/dist/less.js"></script>-->
+    <script src="js/scripts.js"></script>
+
+
+  </body>
+</html>
